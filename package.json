@@ -1,7 +1,7 @@
 {
-  "name": "node-js-getting-started",
-  "version": "0.2.6",
-  "description": "A sample Node.js app using Express 4",
+  "name": "bracelezza",
+  "version": "1.0.0",
+  "description": "Sitio web principal de Bracelezza",
   "engines": {
     "node": "6.11.1"
   },
@@ -11,8 +11,12 @@
     "test": "node test.js"
   },
   "dependencies": {
-    "ejs": "2.5.6",
-    "express": "4.15.2"
+    "body-parser": "^1.18.1",
+    "compression": "^1.7.0",
+    "cookie-parser": "^1.4.3",
+    "express": "4.15.2",
+    "path": "^0.12.7",
+    "pug": "^2.0.0-rc.4"
   },
   "devDependencies": {
     "request": "^2.81.0",
@@ -20,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://git.heroku.com/bracelezza.git"
   },
   "keywords": [
     "node",

@@ -1,16 +1,24 @@
-var express = require('express');
+var express = require('express'),
+    compression = require("compression"),
+    path = require('path'),
+    cookieParser = require('cookie-parser'),
+    bodyParser = require('body-parser');
+
 var app = express();
 
 app.set('port', (process.env.PORT || 5000));
 
-app.use(express.static(__dirname + '/public'));
+app.use(compression());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'pug');
 
-// views is directory for all template files
-app.set('views', __dirname + '/views');
-app.set('view engine', 'ejs');
+app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', function(request, response) {
-  response.render('pages/index');
+app.get('/', function(req, res) {
+  res.render("bracelezza");
 });
 
 app.listen(app.get('port'), function() {

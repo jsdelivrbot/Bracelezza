@@ -1,0 +1,95 @@
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title Bracelezza
+		// Import Google Icon Font
+		link(href="http://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
+		// Import materialize.css before icons.css
+		link(type="text/css", rel="stylesheet", href="css/bracelezza.css", media="screen,projection")
+		// Import jQuery before materialize.js
+		script(type="text/javascript", src="js/jquery-3.2.1.min.js")
+		script(type="text/javascript", src="js/materialize.min.js")
+		script.
+			document.onscroll = menuFixed;
+			function menuFixed(){
+			if(window.scrollY > 0){
+			document.querySelector('nav').classList.add('menu-fixed');
+			}else{
+			document.querySelector('nav').classList.remove('menu-fixed');
+			}
+			}
+	body
+		nav.navigation
+			a#name(href="#") Bracelezza-logo
+			a Quienes somos
+			a Ayuda?
+			a Contactanos
+		header.header
+			p Monitorea en tiempo real
+			p Responde al movimiento de muñeca
+			p Te conoce mientras más la uses :D
+			.contenedor
+				.brazalete
+					.banda.banda-top
+						.correa
+					.pantalla
+					.banda.banda-bottom
+						.correa
+		section.sobre
+			h1
+				| nueva seccion
+				| Lorem Lorem Lorem ipsque quidem possimus
+				br
+				|                 Lorem Lorem Lorem ipsque quidem possimus
+				br
+				|                 Lorem Lorem Lorem ipsque quidem possimus
+				br
+				|                 Lorem Lorem Lorem ipsque quidem possimus
+				br
+				|                 Lorem Lorem Lorem ipsque quidem possimus
+				br
+				|                 Lorem Lorem Lorem ipsque quidem possimus
+				br
+				|                 Lorem Lorem Lorem ipsque quidem possimus
+				br
+				|                 Lorem Lorem Lorem ipsque quidem possimus
+				br
+				|                 Lorem Lorem Lorem ipsque quidem possimus
+				br
+				|                 Lorem Lorem Lorem ipsque quidem possimus
+				br
+				|                 Lorem Lorem Lorem ipsque quidem possimus
+				br
+				|                 Lorem Lorem Lorem ipsque quidem possimus
+				br
+				|                 Lorem Lorem Lorem ipsque quidem possimus
+				br
+				|                 Lorem Lorem Lorem ipsque quidem possimus
+				br
+				|                 Lorem Lorem Lorem ipsque quidem possimus
+				br
+				|                 Lorem Lorem Lorem ipsque quidem possimus
+				br
+				|                 Lorem Lorem Lorem ipsque quidem possimus
+				br
+				|                 Lorem Lorem Lorem ipsque quidem possimus
+				br
+				|                 Lorem Lorem Lorem ipsque quidem possimus
+				br
+				|                 Lorem Lorem Lorem ipsque quidem possimus
+				br
+				|                 Lorem Lorem Lorem ipsque quidem possimus
+				br
+				|                 Lorem Lorem Lorem ipsque quidem possimus
+				br
+				|                 Lorem Lorem Lorem ipsque quidem possimus
+				br
+				|                 Lorem Lorem Lorem ipsque quidem possimus
+				br
+		section
+		footer
+			| Contáctanos!
+			| Mapa de ubicacion
+			| Redes Sociales
