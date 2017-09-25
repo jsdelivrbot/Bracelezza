@@ -1,0 +1,52 @@
+Si te llamas Gisela, lee esto:
+
+a. Si aún no has descargado el repo
+    1. Ejecuta en una consola:
+        git clone https://github.com/giselean/Bracelezza.git    
+    2. Abre la carpeta donde se clonó y ejecuta en la consola
+        npm install
+    3. Ejecuta en la consola
+        npm start
+    4. Ve al navegador e ingresa la dirección
+        http://localhost:5000
+b. Si ya tienes el proyecto
+    1. Ejecuta en una consola
+        git pull origin master
+    2. Ejecuta en la consola
+        npm start
+    2.1 Si te tira error, ejecuta en la consola
+        npm install
+    3. Ve al navegador e ingresa la dirección
+        http://localhost:5000
+
+Al cambiar un archivo .pug, .css o .js (Para estos últimos, SÓLO los que estan dentro de la carpeta public/js)
+NO es necesario reiniciar el servidor
+
+Al cambiar cualquier otro archivo, si es necesario reiniciar el servidor. Para esto:
+    1. Presiona Ctrl+C y escribe la letra 's' en la consola
+    2. Ejecuta
+        npm start
+
+Si ya acabaste de hacer todo y quieres subirlo a github
+    1. Apaga el servidor
+    2. Ejecuta en la consola
+        git add .
+    2.1 Si la consola imprime el siguiente mensaje, NO hay problema.
+        The file will have its original line endings in your working directory. warning: LF will be replaced by CRLF in algun archivo
+    3. Ejecuta
+        git commit -m "Mensaje chingon"
+    4. Ejecuta
+        git push origin master
+    4.1 Si te aparece el siguiente error, contacta al idiota que escribió este archivo de instrucciones
+        (non-fast-forward)
+        error: failed to push some refs to 'ssh://git@coderepo.com:7999/repo/myproject.git'
+        hint: Updates were rejected because the tip of your current branch is behind
+        hint: its remote counterpart. Merge the remote changes (e.g. 'git pull')
+        hint: before pushing again.
+        hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+    4.2 Si la consola imprime algo como esto, todo esta bien.
+        Counting objects: 22, done.
+        Delta compression using up to 8 threads.
+        Compressing objects: 100% (14/14), done.
+        Writing objects: 100% (14/14), 1.89 KiB | 0 bytes/s, done.
+        Total 14 (delta 10), reused 0 (delta 0)

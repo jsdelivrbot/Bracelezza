@@ -4,28 +4,25 @@ html(lang="es")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		meta(http-equiv="X-UA-Compatible", content="ie=edge")
 		title Bracelezza
+
 		// Import Google Icon Font
 		link(href="http://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
+		
 		// Import materialize.css before icons.css
+		link(rel="stylesheet", href="css/materialize.min.css")
 		link(type="text/css", rel="stylesheet", href="css/bracelezza.css", media="screen,projection")
+
 		// Import jQuery before materialize.js
 		script(type="text/javascript", src="js/jquery-3.2.1.min.js")
 		script(type="text/javascript", src="js/materialize.min.js")
-		script.
-			document.onscroll = menuFixed;
-			function menuFixed(){
-			if(window.scrollY > 0){
-			document.querySelector('nav').classList.add('menu-fixed');
-			}else{
-			document.querySelector('nav').classList.remove('menu-fixed');
-			}
-			}
+		script(type="text/javascript", src="js/bracelezza.js")
 	body
 		nav.navigation
-			a#name(href="#") Bracelezza-logo
-			a Quienes somos
-			a Ayuda?
-			a Contactanos
+			a#name(href="#") Bracelezza
+			a Noticias
+			a(href="#pmf") Preguntas más frecuentes.
+			a(href="#sobre") Acerca de nosotros
+			a(href="#contacto") Contacto
 		header.header
 			p Monitorea en tiempo real
 			p Responde al movimiento de muñeca
@@ -37,59 +34,75 @@ html(lang="es")
 					.pantalla
 					.banda.banda-bottom
 						.correa
-		section.sobre
-			h1
-				| nueva seccion
-				| Lorem Lorem Lorem ipsque quidem possimus
-				br
-				|                 Lorem Lorem Lorem ipsque quidem possimus
-				br
-				|                 Lorem Lorem Lorem ipsque quidem possimus
-				br
-				|                 Lorem Lorem Lorem ipsque quidem possimus
-				br
-				|                 Lorem Lorem Lorem ipsque quidem possimus
-				br
-				|                 Lorem Lorem Lorem ipsque quidem possimus
-				br
-				|                 Lorem Lorem Lorem ipsque quidem possimus
-				br
-				|                 Lorem Lorem Lorem ipsque quidem possimus
-				br
-				|                 Lorem Lorem Lorem ipsque quidem possimus
-				br
-				|                 Lorem Lorem Lorem ipsque quidem possimus
-				br
-				|                 Lorem Lorem Lorem ipsque quidem possimus
-				br
-				|                 Lorem Lorem Lorem ipsque quidem possimus
-				br
-				|                 Lorem Lorem Lorem ipsque quidem possimus
-				br
-				|                 Lorem Lorem Lorem ipsque quidem possimus
-				br
-				|                 Lorem Lorem Lorem ipsque quidem possimus
-				br
-				|                 Lorem Lorem Lorem ipsque quidem possimus
-				br
-				|                 Lorem Lorem Lorem ipsque quidem possimus
-				br
-				|                 Lorem Lorem Lorem ipsque quidem possimus
-				br
-				|                 Lorem Lorem Lorem ipsque quidem possimus
-				br
-				|                 Lorem Lorem Lorem ipsque quidem possimus
-				br
-				|                 Lorem Lorem Lorem ipsque quidem possimus
-				br
-				|                 Lorem Lorem Lorem ipsque quidem possimus
-				br
-				|                 Lorem Lorem Lorem ipsque quidem possimus
-				br
-				|                 Lorem Lorem Lorem ipsque quidem possimus
-				br
-		section
-		footer
-			| Contáctanos!
-			| Mapa de ubicacion
-			| Redes Sociales
+		section#pmf
+			h3.center-align Preguntas frecuentes
+			div.row.center-align
+				div.col.s12.m6
+					h4 ¿Cómo funciona Bracelezza?
+					p Bracelezza monitorea en tiempo real tu ritmo cardíaco. En caso de detectar un cambio brusco en este, la pulsera manda una señal a las cámaras del STC Metro para que te monitoreen mediante estas.
+				div.col.s12.m6
+					h4 ¿Dónde la puedo adquirir?
+					p En uno de nuestros stands ubicados en las diversas estaciones del metro de la Ciudad de México por tan sólo $100.00 MXN (Cien pesos, 00/100 m.n.)
+			div.row.center-align
+				div.col.s12.m6
+					h4 ¿Qué hago si realmente me están acosando?
+					p Puedes hacer un gesto discreto con la pulsera. Esto enviará una señal de alerta, similar a la de la palanca de emergencia de los vagones del metro. Así, un policía en la estación acudirá a ayudarte.
+				div.col.s12.m6
+					h4 ¿Qué pasa si no me estan acosando?
+					p Sabemos que un cambio en el ritmo cardiaco no siempre sucede por esta razón. Es por esto que la pulsera puede aprender de ti, con base en las ocasiones en las que realizas el gesto de emergencia.
+			div.row.center-align
+				div.col.s12.m6
+					h4 ¿Sólo funciona en el STC Metro?
+					p Sí, única y exclusivamente en el metro de la Ciudad de México.
+				div.col.s12.m6
+					h4 ¿La puedo traer cuando quiera?
+					p Sí, igual que un reloj, lo puedes traer sólo cuando quieras.							
+		section#sobre.sobre
+			div.row.center-align
+				div.col.s12
+					h3 Miembros del 
+						a(href="https://twitter.com/hashtag/EquipoBracelezza") #EquipoBracelezza
+					p Nosotros somos un grupo de 7 personas que con mucho amor y pasión decidimos crear este producto, sólo para ti.
+			div.row.center-align
+				div.col.s12.m3
+					h4 André Pozos
+					a(href="https://twitter.com/AndreAndyP") Twitter
+				div.col.s12.m3
+					h4 Gisela Piña
+					a(href="mailto:giselee.mau@gmail.com") Correo electrónico
+				div.col.s12.m3
+					h4 Diego Estrada
+					p Info de contacto no disponible
+				div.col.s12.m3
+					h4 Ana Jerónimo
+					p Info de contacto no disponible
+			div.row.center-align
+				div.col.s12.m4
+					h4 Rogelio Beltrán
+					p Info de contacto no disponible
+				div.col.s12.m4
+					h4 Jorge Castillo
+					p Info de contacto no disponible
+				div.col.s12.m4
+					h4 Gerardo Uribe
+					p Info de contacto no disponible
+		footer#contacto
+			div.row.center-align
+				div.col.s12.m4
+					h3 Contacto
+					p.left-align Envíanos una foto a nuestro Instagram o un tuit a nuestro Twitter con  el hashtag #EquipoBracelezza con tus sugerencias o reclamos. Todo el equipo leerá tus comentarios.
+					p También puedes contactarnos vía 
+						a(href="mailto:bracelezza@outlook.com") correo electrónico
+				div.col.s12.m4
+					h3 Ubicación
+					p Nuestras instalaciones se encuentran en
+					div#mapa
+					script(src="js/mapa.js")
+					script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABBrBbAvCP3YGixRNML4PyZaqvxgBEt4A&callback=mapa")
+				div.col.s12.m4
+					h3 Redes sociales
+					a(href="https://twitter.com/bracelezza") Twitter
+					br
+					a(href="https://www.instagram.com/bracelezza/") Instagram
+					br
+					a(href="https://www.facebook.com/bracelezza/") Facebook
