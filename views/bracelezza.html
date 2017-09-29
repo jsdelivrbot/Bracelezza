@@ -1,0 +1,127 @@
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Bracelezza</title>
+    <!-- Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <!-- Import materialize.css before icons.css-->
+    <link rel="stylesheet" href="css/materialize.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/bracelezza.css" media="screen,projection"/>
+    <!-- Import jQuery before materialize.js-->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/bracelezza.js"></script>
+  </head>
+  <body>
+    <nav class="navigation"><a id="name" href="#">Bracelezza</a><a>Noticias</a><a href="#pmf">Preguntas más frecuentes.</a><a href="#sobre">Acerca de nosotros</a><a href="#contacto">Contacto</a></nav>
+    <header class="header">
+      <p>Monitorea en tiempo real</p>
+      <p>Responde al movimiento de muñeca</p>
+      <p>Te conoce mientras más la uses :D</p>
+      <div class="contenedor">
+        <div class="brazalete">
+          <div class="banda banda-top">
+            <div class="correa"></div>
+          </div>
+          <div class="pantalla"></div>
+          <div class="banda banda-bottom">
+            <div class="correa"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="pmf">
+      <h3 class="center-align">Preguntas frecuentes</h3>
+      <div class="row center-align">
+        <div class="col s12 m6">
+          <h4>¿Cómo funciona Bracelezza?</h4>
+          <p>Bracelezza monitorea en tiempo real tu ritmo cardíaco. En caso de detectar un cambio brusco en este, la pulsera manda una señal a las cámaras del STC Metro para que te monitoreen mediante estas.</p>
+        </div>
+        <div class="col s12 m6">
+          <h4>¿Dónde la puedo adquirir?</h4>
+          <p>En uno de nuestros stands ubicados en las diversas estaciones del metro de la Ciudad de México por tan sólo $100.00 MXN (Cien pesos, 00/100 m.n.)</p>
+        </div>
+      </div>
+      <div class="row center-align">
+        <div class="col s12 m6">
+          <h4>¿Qué hago si realmente me están acosando?</h4>
+          <p>Puedes hacer un gesto discreto con la pulsera. Esto enviará una señal de alerta, similar a la de la palanca de emergencia de los vagones del metro. Así, un policía en la estación acudirá a ayudarte.</p>
+        </div>
+        <div class="col s12 m6">
+          <h4>¿Qué pasa si no me estan acosando?</h4>
+          <p>Sabemos que un cambio en el ritmo cardiaco no siempre sucede por esta razón. Es por esto que la pulsera puede aprender de ti, con base en las ocasiones en las que realizas el gesto de emergencia.</p>
+        </div>
+      </div>
+      <div class="row center-align">
+        <div class="col s12 m6">
+          <h4>¿Sólo funciona en el STC Metro?</h4>
+          <p>Sí, única y exclusivamente en el metro de la Ciudad de México.</p>
+        </div>
+        <div class="col s12 m6">
+          <h4>¿La puedo traer cuando quiera?</h4>
+          <p>Sí, igual que un reloj, lo puedes traer sólo cuando quieras.							</p>
+        </div>
+      </div>
+    </section>
+    <section class="sobre" id="sobre">
+      <div class="row center-align">
+        <div class="col s12">
+          <h3>Miembros del <a href="https://twitter.com/hashtag/EquipoBracelezza">#EquipoBracelezza</a></h3>
+          <p>Nosotros somos un grupo de 7 personas que con mucho amor y pasión decidimos crear este producto, sólo para ti.</p>
+        </div>
+      </div>
+      <div class="row center-align">
+        <div class="col s12 m3">
+          <h4>André Pozos</h4><a href="https://twitter.com/AndreAndyP">Twitter</a>
+        </div>
+        <div class="col s12 m3">
+          <h4>Gisela Piña</h4><a href="mailto:giselee.mau@gmail.com">Correo electrónico</a>
+        </div>
+        <div class="col s12 m3">
+          <h4>Diego Estrada</h4>
+          <p>Info de contacto no disponible</p>
+        </div>
+        <div class="col s12 m3">
+          <h4>Ana Jerónimo</h4>
+          <p>Info de contacto no disponible</p>
+        </div>
+      </div>
+      <div class="row center-align">
+        <div class="col s12 m4">
+          <h4>Rogelio Beltrán</h4>
+          <p>Info de contacto no disponible</p>
+        </div>
+        <div class="col s12 m4">
+          <h4>Jorge Castillo</h4>
+          <p>Info de contacto no disponible</p>
+        </div>
+        <div class="col s12 m4">
+          <h4>Gerardo Uribe</h4>
+          <p>Info de contacto no disponible</p>
+        </div>
+      </div>
+    </section>
+    <footer id="contacto">
+      <div class="row center-align">
+        <div class="col s12 m4">
+          <h3>Contacto</h3>
+          <p class="left-align">Envíanos una foto a nuestro Instagram o un tuit a nuestro Twitter con  el hashtag #EquipoBracelezza con tus sugerencias o reclamos. Todo el equipo leerá tus comentarios.</p>
+          <p>También puedes contactarnos vía <a href="mailto:bracelezza@outlook.com">correo electrónico</a></p>
+        </div>
+        <div class="col s12 m4">
+          <h3>Ubicación</h3>
+          <p>Nuestras instalaciones se encuentran en</p>
+          <div id="mapa"></div>
+          <script src="js/mapa.js"></script>
+          <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABBrBbAvCP3YGixRNML4PyZaqvxgBEt4A&amp;callback=mapa"></script>
+        </div>
+        <div class="col s12 m4">
+          <h3>Redes sociales</h3><a href="https://twitter.com/bracelezza">Twitter</a><br/><a href="https://www.instagram.com/bracelezza/">Instagram</a><br/><a href="https://www.facebook.com/bracelezza/">Facebook</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
